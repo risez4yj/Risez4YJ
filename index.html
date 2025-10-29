@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>risez4Yj • Produktübersicht</title>
+<style>
+:root {
+  --bg:#0c1322;
+  --card:#111b2e;
+  --accent:#f59e0b;
+  --accent2:#fcd34d;
+  --muted:#9aa4b2;
+  --radius:18px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body {
+  font-family:Inter,system-ui,sans-serif;
+  background:radial-gradient(circle at top,#16233b,#0c1322 70%);
+  color:#e6eef6;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:40px 20px;
+}
+
+header {text-align:center;margin-bottom:40px;animation:fadeIn 0.7s ease;}
+h1 {font-size:40px;background:linear-gradient(90deg,var(--accent2),var(--accent));-webkit-background-clip:text;color:transparent;font-weight:700;}
+p {color:var(--muted);font-size:18px;margin-top:8px;}
+
+.products {display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:24px;width:100%;max-width:960px;}
+
+.card {background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:0 6px 20px rgba(0,0,0,0.4);transition:transform 0.2s ease, box-shadow 0.3s ease;}
+.card:hover {transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.6);}
+
+.card-content {display:flex;gap:20px;align-items:center;}
+.card-content img {width:110px;border-radius:12px;flex-shrink:0;}
+.card-details h2 {font-size:24px;margin-bottom:8px;}
+.meta {font-size:16px;color:var(--muted);margin-bottom:10px;}
+
+.links {display:flex;gap:12px;flex-wrap:wrap;margin-top:10px;}
+.btn {display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:12px;background:var(--accent);color:#06101a;font-weight:700;text-decoration:none;font-size:16px;transition:background 0.2s ease,transform 0.2s ease;}
+.btn:hover {background:var(--accent2);transform:scale(1.05);}
+.links .btn img {width:18px;height:18px;}
+
+footer {margin-top:50px;font-size:15px;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.05);padding-top:14px;width:100%;max-width:960px;}
+
+@media (max-width:600px){
+  body{padding:20px;}
+  h1{font-size:32px}
+  .products{grid-template-columns:1fr}
+  .card{padding:18px}
+  .card-content{flex-direction:column;align-items:flex-start;gap:16px;}
+  .card-content img{width:120px}
+  .card-details h2{font-size:22px}
+  .meta{font-size:16px}
+  .btn{font-size:16px;padding:12px 16px}
+  .links{gap:10px}
+}
+
+@keyframes fadeIn {from {opacity:0;transform:translateY(-10px);} to {opacity:1;transform:none;}}
+</style>
+</head>
+<body>
+<header>
+  <h1>risez4Yj</h1>
+  <p>Unsere Produkte – schau dich um und kontaktiere uns</p>
+</header>
+
+<section class="products">
+  <!-- AirPods -->
+  <!-- AirPods -->
+<div class="card">
+  <div class="card-content">
+    <img src="img/Airpods2.jpg" alt="AirPods">
+    <div class="card-details">
+      <h2>AirPods (2. Gen)</h2>
+      <div class="meta">Neu, mit Ladecase</div>
+      <div class="links">
+        <a class="btn" href="https://wa.me/+436601042265" target="_blank">
+          <img src="img/Whatsapp_logo.svg" alt="WhatsApp">WhatsApp
+        </a>
+        <a class="btn" href="https://instagram.com/risez4y_shop" target="_blank">
+          <img src="img/Instagram.svg" alt="Instagram">Instagram
+        </a>
+        <a class="btn" href="mailto:risez4yj@gmail.com" target="_blank">
+          <img src="img/Mail.svg" alt="E-Mail">E-Mail
+        </a>
+        <a class="btn" href="https://www.snapchat.com/add/yusuf_abiii" target="_blank">
+          <img src="img/Snapchat_logo.svg" alt="Snapchat">Snapchat
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Parfüm -->
+<div class="card">
+  <div class="card-content">
+    <img src="img/Parfum_dior_savage.jpg" alt="Parfüm Dior Sauvage">
+    <div class="card-details">
+      <h2>Parfüm Dior Sauvage</h2>
+      <div class="meta">Neu, originalverpackt</div>
+      <div class="links">
+        <a class="btn" href="https://wa.me/+436601042265" target="_blank">
+          <img src="img/Whatsapp_logo.svg" alt="WhatsApp">WhatsApp
+        </a>
+        <a class="btn" href="https://instagram.com/risez4y_shop" target="_blank">
+          <img src="img/Instagram.svg" alt="Instagram">Instagram
+        </a>
+        <a class="btn" href="mailto:risez4yj@gmail.com" target="_blank">
+          <img src="img/Mail.svg" alt="E-Mail">E-Mail
+        </a>
+        <a class="btn" href="https://www.snapchat.com/add/yusuf_abiii" target="_blank">
+          <img src="img/Snapchat_logo.svg" alt="Snapchat">Snapchat
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<footer>
+© risez4Yj
+</footer>
+</body>
+</html>
